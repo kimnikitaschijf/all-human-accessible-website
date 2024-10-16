@@ -1,0 +1,335 @@
+* {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* kleurenpalette */
+:root {
+    --main-color-green: #4e7141;
+    --main-color-beige: #f9e9c2;
+    --main-color-orange: #ff8d06;
+    --main-color-brown: #491b02;
+    --card-color-orange: #ff9a41;
+    --card-color-green: #3c593e;
+    --text-color-white: #fff;
+    --text-color-black: #000;
+    --header-font: 'Poppins-Black', sans-serif;
+    --sub-header-font: 'Poppins-Bold', sans-serif;
+    --paragraph-font: 'Poppins-Medium', sans-serif;
+    --link-font: 'Poppins-Regular', sans-serif;
+    --border-bigCard: 2em;
+    --border-card: 1.0625em;
+    --image-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* header */
+header {
+    margin: -10px;
+    background-image: url(assets/bf2313f512b2aa9f8d58130796efd545.jpg);
+    padding: 150px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    text-align: center;
+    color: var(--text-color-white);
+    font-family: var(--header-font);
+    font-weight: 400;
+
+    /* lijst van nav bar */
+    ul {
+        display: flex;
+        justify-content: right;
+        gap: 20px;
+    }
+
+    /* items in de nav bar */
+    li {
+        display: inline;
+        text-decoration: none;
+        text-align: center;
+        color: var(--titel);
+        font-size: 1rem;
+        font-family: var(--sub-header-font);
+        font-weight: bold;
+        text-shadow: 2px 2px 2px var(--text-color-black);
+    }
+
+    /* instellingen linkjes nav bar */
+    a {
+        text-decoration: none;
+        color: var(--text-color-white);
+        cursor: pointer;
+
+    }
+
+    /* instellingen linkjes nav bar on hover */
+    a:hover {
+        color: var(--card-color-orange);
+    }
+
+    /* bieb in bloei logo */
+    .logo {
+        margin: 0px;
+        width: 100px;
+        display: flex;
+        justify-content: left;
+    }
+
+    /* groene bieb header/titel */
+    h1 {
+        color: var(--text-color-white);
+        font-family: var(--header-font);
+        font-weight: 700;
+        font-style: normal;
+        font-size: 5.5rem;
+        text-shadow: 2px 2px 5px var(--text-color-black);
+    }
+
+    /* ondertitel onder groene bieb titel */
+    .ondertitel {
+        padding: -10px;
+        margin-top: -15px;
+        font-family: var(--sub-header-font);
+        font-weight: bold;
+        text-shadow: 2px 2px 3px var(--text-color-black);
+        text-align: center;
+    }
+}
+
+/* blokje van de bieb */
+.bieb-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--main-color-beige);
+    color: var(--main-color-green);
+    border-radius: 15px;
+    max-width: 1400px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    margin-top: -50px;
+
+    /* layout van bieb */
+    .content {
+        width: 50%;
+    }
+
+    /* titel bieb */
+    h1 {
+        font-size: 3em;
+        color: var(--main-color-green);
+        margin-bottom: 20px;
+    }
+
+    /* tekst in bieb */
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: var(--main-color-green);
+    }
+
+    /* plaatje layout */
+    .image-container {
+        width: 40%;
+    }
+
+    /* plaatje instellingen */
+    .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* partners blokje */
+.partners-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: var(--card-color-green);
+    color: var(--main-color-beige);
+    border-radius: 15px;
+    max-width: 1400px;
+    margin: 40px auto;
+    font-weight: 400;
+    margin-top: -40px;
+
+    /* partners blok instellingen */
+    .content {
+        width: 50%;
+    }
+
+    /* partners titel */
+    h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    /* partners tekst */
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* logo's grid */
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        width: 40%;
+    }
+
+    /* logo's instellingen */
+    .photo {
+        background-color: var(--main-color-beige);
+        border-radius: 10px;
+        height: 150px;
+        /* Plaats hier een achtergrondafbeelding wanneer je een foto toevoegt */
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* logo's on hover */
+    .photo:hover {
+        opacity: 0.8;
+    }
+}
+
+/* tekst stukje over samenwerken */
+.samenwerken {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: var(--main-color-green);
+    border-radius: 15px;
+    max-width: 1400px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+
+    /* layout samenwerken */
+    .content {
+        width: 75%;
+    }
+
+    /* titel kopje samenwerken */
+    h2 {
+        font-size: 4em;
+        color: var(--main-color-green);
+        margin-bottom: 20px;
+    }
+
+    /* Oranje kleur voor het vraagteken */
+    .highlight {
+        color: var(--card-color-orange);
+        font-size: 4rem;
+    }
+
+    /* tekst samenwerken */
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: var(--main-color-green);
+    }
+
+    /* Sterke tekstkleur 'klik hier' */
+    p strong {
+        color: var(--main-color-green);
+    }
+
+    /* foto */
+    .shape-container {
+        width: 25%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    /* foto */
+    .shape-container img {
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/* footer */
+.footer {
+    background-color: var(--main-color-beige);
+    /* licht beige achtergrond */
+    padding: 40px 20px;
+    position: relative;
+
+    /* instellingen 3 stukjes tekst */
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* instellingen tekst rij */
+    .footer-column {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* titel kopjes footer */
+    .footer-column h3 {
+        font-size: 1.5 rem;
+        color: var(--main-color-green);
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    /* tekst in footer */
+    .footer-column p,
+    .footer-column a {
+        font-size: 1rem;
+        color: var(--main-color-green);
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+
+    /* rijtjes in footer */
+    .footer-column ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    /* layout footer tekst */
+    .footer-column ul li {
+        margin-bottom: 10px;
+    }
+
+    /* linkjes on hover */
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+        color: var(--main-color-orange);
+    }
+}
