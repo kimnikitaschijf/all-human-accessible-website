@@ -17,39 +17,26 @@ body {
 :root {
     --main-color-green: #4e7141;
     --main-color-beige: #f9e9c2;
-    --main-color-orange: #ff8d06;
-    --main-color-brown: #491b02;
-    --card-color-orange: #ff9a41;
-    --card-color-green: #3c593e;
-    --text-color-white: #fff;
-    --text-color-black: #000;
-    --header-font: 'Poppins-Black', sans-serif;
-    --sub-header-font: 'Poppins-Bold', sans-serif;
-    --paragraph-font: 'Poppins-Medium', sans-serif;
-    --link-font: 'Poppins-Regular', sans-serif;
-    --border-bigCard: 2em;
-    --border-card: 1.0625em;
-    --image-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-/* header */
-header {
-    margin: -10px;
     background-image: url(assets/bf2313f512b2aa9f8d58130796efd545.jpg);
-    padding: 150px;
+    padding: 340px;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
     text-align: center;
     color: var(--text-color-white);
     font-family: var(--header-font);
-    font-weight: 400;
-
+    font-weight: 500;
+    max-width: 110%;
     /* lijst van nav bar */
     ul {
         display: flex;
         justify-content: right;
-        gap: 20px;
+        gap: 50px;
+        position: absolute;
+        top: 4rem;
+        right: 6rem;
+        font-size: 1.5rem;
+        ;
     }
 
     /* items in de nav bar */
@@ -58,10 +45,7 @@ header {
         text-decoration: none;
         text-align: center;
         color: var(--titel);
-        font-size: 1rem;
         font-family: var(--sub-header-font);
-        font-weight: bold;
-        text-shadow: 2px 2px 2px var(--text-color-black);
     }
 
     /* instellingen linkjes nav bar */
@@ -69,7 +53,6 @@ header {
         text-decoration: none;
         color: var(--text-color-white);
         cursor: pointer;
-
     }
 
     /* instellingen linkjes nav bar on hover */
@@ -81,28 +64,18 @@ header {
     .logo {
         margin: 0px;
         width: 100px;
-        display: flex;
-        justify-content: left;
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
     }
 
     /* groene bieb header/titel */
     h1 {
+        font-family: 'Poppins-Black', sans-serif;
+        font-size: 9rem;
         color: var(--text-color-white);
-        font-family: var(--header-font);
-        font-weight: 700;
-        font-style: normal;
-        font-size: 5.5rem;
-        text-shadow: 2px 2px 5px var(--text-color-black);
-    }
-
-    /* ondertitel onder groene bieb titel */
-    .ondertitel {
-        padding: -10px;
-        margin-top: -15px;
-        font-family: var(--sub-header-font);
-        font-weight: bold;
-        text-shadow: 2px 2px 3px var(--text-color-black);
-        text-align: center;
+        font-weight: 900;
+        line-height: 1.1em;
     }
 }
 
@@ -115,11 +88,11 @@ header {
     background-color: var(--main-color-beige);
     color: var(--main-color-green);
     border-radius: 15px;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 40px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: 400;
-    margin-top: -50px;
+    margin-top: -80px;
 
     /* layout van bieb */
     .content {
@@ -128,9 +101,10 @@ header {
 
     /* titel bieb */
     h1 {
-        font-size: 3em;
+        font-size: 5.5em;
         color: var(--main-color-green);
         margin-bottom: 20px;
+        font-weight: bold;
     }
 
     /* tekst in bieb */
@@ -138,12 +112,13 @@ header {
         font-size: 1em;
         line-height: 1.6;
         margin-bottom: 20px;
+        padding: 40px;
         color: var(--main-color-green);
     }
 
     /* plaatje layout */
     .image-container {
-        width: 40%;
+        width: 45%;
     }
 
     /* plaatje instellingen */
@@ -165,7 +140,7 @@ header {
     background-color: var(--card-color-green);
     color: var(--main-color-beige);
     border-radius: 15px;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 40px auto;
     font-weight: 400;
     margin-top: -40px;
@@ -177,8 +152,9 @@ header {
 
     /* partners titel */
     h1 {
-        font-size: 3em;
+        font-size: 5.5em;
         margin-bottom: 20px;
+        font-weight: bold;
     }
 
     /* partners tekst */
@@ -186,6 +162,7 @@ header {
         font-size: 1em;
         line-height: 1.6;
         margin-bottom: 20px;
+        padding: 40px;
     }
 
     /* logo's grid */
@@ -193,8 +170,9 @@ header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        gap: 20px;
-        width: 40%;
+        gap: 60px;
+        width: 45%;
+        padding: 20px;
     }
 
     /* logo's instellingen */
@@ -228,13 +206,13 @@ header {
 
     /* layout samenwerken */
     .content {
-        width: 75%;
+        width: 80%;
     }
 
     /* titel kopje samenwerken */
     h2 {
-        font-size: 4em;
-        color: var(--main-color-green);
+        font-size: 5em;
+        color: var(--card-color-green);
         margin-bottom: 20px;
     }
 
@@ -249,7 +227,8 @@ header {
         font-size: 1em;
         line-height: 1.6;
         margin-bottom: 20px;
-        color: var(--main-color-green);
+        color: var(--card-color-green);
+        padding: 20px;
     }
 
     /* Sterke tekstkleur 'klik hier' */
@@ -282,7 +261,7 @@ header {
 .footer {
     background-color: var(--main-color-beige);
     /* licht beige achtergrond */
-    padding: 40px 20px;
+    padding: 1rem;
     position: relative;
 
     /* instellingen 3 stukjes tekst */
@@ -301,7 +280,7 @@ header {
 
     /* titel kopjes footer */
     .footer-column h3 {
-        font-size: 1.5 rem;
+        font-size: 1.5rem;
         color: var(--main-color-green);
         margin-bottom: 20px;
         font-weight: bold;
@@ -312,19 +291,18 @@ header {
     .footer-column a {
         font-size: 1rem;
         color: var(--main-color-green);
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
         text-decoration: none;
     }
 
     /* rijtjes in footer */
     .footer-column ul {
         list-style-type: none;
-        padding: 0;
     }
 
     /* layout footer tekst */
     .footer-column ul li {
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
 
     /* linkjes on hover */
