@@ -17,7 +17,23 @@ body {
 :root {
     --main-color-green: #4e7141;
     --main-color-beige: #f9e9c2;
-    background-image: url(./assets/plaatje.jpg);
+    --main-color-orange: #ff8d06;
+    --main-color-brown: #491b02;
+    --card-color-orange: #ff9a41;
+    --card-color-green: #3c593e;
+    --text-color-white: #fff;
+    --text-color-black: #000;
+    --header-font: 'Poppins-Black', sans-serif;
+    --sub-header-font: 'Poppins-Bold', sans-serif;
+    --paragraph-font: 'Poppins-Medium', sans-serif;
+    --link-font: 'Poppins-Regular', sans-serif;
+    --border-bigCard: 2em;
+    --border-card: 1.0625em;
+    --image-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+header {
+    background-image: url(../assets/plaatje.jpg);
     padding: 340px;
     background-repeat: no-repeat;
     background-position: center top;
@@ -27,6 +43,7 @@ body {
     font-family: var(--header-font);
     font-weight: 500;
     max-width: 110%;
+
     /* lijst van nav bar */
     ul {
         display: flex;
@@ -248,7 +265,7 @@ body {
 
     /* foto */
     .shape-container img {
-        width: 200px;
+        width: 500px;
         height: auto;
         object-fit: cover;
         position: absolute;
